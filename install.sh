@@ -53,6 +53,9 @@ sed -i 's/^# %wheel/%wheel/' /etc/sudoers
 
 echo "==> Configuring WSL default user..."
 cat > /etc/wsl.conf <<EOF
+[boot]
+systemd=true
+
 [user]
 default=$username
 EOF
