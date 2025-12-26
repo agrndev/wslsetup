@@ -53,6 +53,11 @@ alias load-session='$HOME/.config/tmux/load-session.sh'
 PS1='[\u@\h \W]\$ '
 EOF
 
+echo "==> Configuring docker..."
+sudo usermod -aG docker $USER
+sudo systemctl enable --now docker.service
+
 echo "------------------------------"
 echo "User configuration complete..."
 echo "------------------------------"
+
