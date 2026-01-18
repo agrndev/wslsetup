@@ -30,11 +30,10 @@ mkdir -p \
 
 echo "==> Cloning dotfiles..."
 git clone https://github.com/agrndev/dotfiles.git ~/.dotfiles
-mkdir -p $HOME/.config
+mkdir -p "$HOME/.config"
 rm -f "$HOME/.bashrc"
 cd ~/.dotfiles
 stow bash nvim tmux
-cd ~
 
 echo "==> Configuring docker..."
 sudo usermod -aG docker $USER
@@ -43,6 +42,5 @@ sudo systemctl enable --now docker.service
 echo "------------------------------"
 echo "User configuration complete..."
 echo "------------------------------"
-
 echo
 echo "Restart your terminal."
