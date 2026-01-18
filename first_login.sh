@@ -29,10 +29,11 @@ mkdir -p \
   $HOME/repos
 
 echo "==> Cloning dotfiles..."
-mkdir -p $HOME/.config
 git clone https://github.com/agrndev/dotfiles.git ~/.dotfiles
+mkdir -p $HOME/.config
+rm -f "$HOME/.bashrc"
 cd ~/.dotfiles
-stow --adopt bash nvim tmux
+stow bash nvim tmux
 cd ~
 
 echo "==> Configuring docker..."
