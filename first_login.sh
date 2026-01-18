@@ -43,4 +43,5 @@ echo "------------------------------"
 echo "User configuration complete..."
 echo "------------------------------"
 
+echo
 echo "Restart your terminal."
