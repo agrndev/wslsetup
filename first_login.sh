@@ -42,3 +42,5 @@ sudo systemctl enable --now docker.service
 echo "------------------------------"
 echo "User configuration complete..."
 echo "------------------------------"
+
+echo "Restart your terminal."
