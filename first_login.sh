@@ -37,7 +37,7 @@ stow bash nvim tmux
 
 echo "==> Configuring docker..."
 sudo usermod -aG docker $USER
-sudo systemctl enable --now docker.service
+sudo systemctl enable docker.service
 
 echo "------------------------------"
 echo "User configuration complete..."
