@@ -82,6 +82,7 @@ pacman -S --noconfirm \
   python-pip \
   nodejs \
   npm \
+  luarocks \
   dotnet-sdk \
   dotnet-runtime \
   aspnet-runtime
