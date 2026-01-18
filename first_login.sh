@@ -30,8 +30,8 @@ mkdir -p \
 
 echo "==> Cloning dotfiles..."
 mkdir -p $HOME/.config
-git clone https://github.com/agrndev/dotfiles.git
-cd dotfiles
+git clone https://github.com/agrndev/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
 stow bash nvim tmux
 cd ~
 
