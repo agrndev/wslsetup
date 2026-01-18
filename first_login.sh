@@ -32,7 +32,7 @@ echo "==> Cloning dotfiles..."
 mkdir -p $HOME/.config
 git clone https://github.com/agrndev/dotfiles.git
 cd dotfiles
-stow nvim tmux
+stow bash nvim tmux
 cd ~
 
 echo "==> Configuring docker..."
