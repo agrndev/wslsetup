@@ -30,6 +30,7 @@ Code editor: `Neovim`.
 Supported programming languages:
 * C# (.NET)
 * C/CPP
+* Go
 * JavaScript
 * Typescript
 * HTML/CSS
@@ -44,11 +45,13 @@ Supported programming languages:
 Compilers:
 * GCC
 * Clang
+* Go
 
 Programs:
 * dotnet-sdk
 * dotnet-runtime
 * aspnet-runtime
+* go
 * nodejs
 * python
 * git

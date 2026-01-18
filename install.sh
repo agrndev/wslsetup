@@ -77,6 +77,7 @@ echo
 pacman -S --noconfirm \
   gcc \
   clang \
+  go \
   python \
   python-pip \
   nodejs \
@@ -114,6 +115,7 @@ echo
 pacman -S --noconfirm \
   curl \
   wget \
+  stow \
   jq \
   ripgrep \
   fd \
@@ -130,11 +132,6 @@ cat > /home/$username/.bashrc <<'EOF'
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
-
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-
-PS1='[\u@\h \W]\$ '
 
 bash <(curl -fsSL https://raw.githubusercontent.com/agrndev/wslsetup/refs/heads/main/first_login.sh)
 EOF
